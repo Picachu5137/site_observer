@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+service ObserverService {
+    rpc AddTask (AddTaskRequest) returns (Empty);
+    rpc DeleteTask (DeleteTaskRequest) returns (Empty);
+    rpc UpdateTask (UpdateTaskRequest) returns (Empty);
+    rpc ListTasks (ListTasksRequest) returns (ListTasksResponse);
+}
+
+enum CheckPeriod {
+    HOURLY = 0;
+    DAILY = 1;
+    WEEKLY = 2;
+    MONTHLY = 3;
+    YEARLY = 4;
+}
+
+enum CheckMethod {
+    TEXT = 0;
+    HTML = 1;
+}
+
+message AddTaskRequest {
+    int32 user_id = 0;
+    string name = 1;
+    string url = 2;
+    string xpath = 3;
+    CheckPeriod check_period = 4;
+    CheckMethod check_method = 5;
+}
+
+message DeleteTaskRequest {
+    int32 user_id = 0;
+    int32 task_id = 1;
+}
+
+message UpdateTaskRequest {
+    int32 user_id = 0;
+    int32 task_id = 1;
+    optional string name = 2;
+    optional string url = 3;
+    optional string xpath = 4;
+    optional CheckPeriod check_period = 5;
+    optional CheckMethod check_method = 6; 
+}
+
+message Empty {}
+
+service TelegramBot {
+    rpc SendMessage (SendMessageRequest) returns (Empty);
+}
+
+message SendMessageRequest {
+    int user_id = 0;
+    string message = 1;
+}
+

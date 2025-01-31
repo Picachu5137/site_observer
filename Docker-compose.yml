@@ -1,0 +1,27 @@
+services:
+  rabbitmq:
+    image: rabbitmq:4-management-alpine
+    restart: unless-stopped
+
+  redis:
+    image: redis:latest
+    restart: unless-stopped
+
+  observer:
+    build: 
+      context:
+        - ./observer/
+    depends_on:
+      - rabbitmq
+    restart: unless-stopped
+  
+  telegram_bot:
+    build: 
+      context:
+        - ./telegram_bot/
+    depends_on:
+      - rabbitmq
+      - observer
+      - redis
+    restart: unless-stopped
+  
