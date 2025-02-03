@@ -7,10 +7,10 @@ def add_task_keyboard() -> InlineKeyboardMarkup:
     Use in add_task menu
     """
     buttons = [
-        [InlineKeyboardButton(text="Изменить текст", callback_data="set_name")],
+        [InlineKeyboardButton(text="Изменить название", callback_data="set_name")],
         [InlineKeyboardButton(text="Изменить URL", callback_data="set_url")],
         [InlineKeyboardButton(text="Изменить XPath", callback_data="set_xpath")],
-        [InlineKeyboardButton(text="Изменить частоту проверки", callback_data="set_check_period")]
+        [InlineKeyboardButton(text="Изменить частоту проверки", callback_data="set_check_period")],
         [InlineKeyboardButton(text="Создать", callback_data="create")],
         [InlineKeyboardButton(text="Отмена", callback_data="cancel")],
     ]

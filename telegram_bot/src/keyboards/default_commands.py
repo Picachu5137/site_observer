@@ -18,3 +18,4 @@ async def set_default_commands(bot: Bot) -> None:
 
 async def remove_default_commands(bot: Bot) -> None:
     await bot.delete_my_commands(scope=BotCommandScopeDefault())
+    

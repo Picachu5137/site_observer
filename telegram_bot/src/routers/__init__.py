@@ -1,6 +1,6 @@
 from aiogram import Router
 
-from bot.routers.observer_routes import observer_router
+from routers.observer_routes import observer_router
 
 
 main_router = Router()

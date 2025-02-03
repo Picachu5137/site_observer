@@ -1,16 +1,18 @@
 import asyncio
 
 from aiogram import Bot, Dispatcher
+from aiogram.client.default import DefaultBotProperties
+from aiogram.enums.parse_mode import ParseMode
 from loguru import logger
 
 from settings.bot_settings import BotSettings
-from bot.routers import main_router
-from bot.keyboards.default_commands import set_default_commands, remove_default_commands
+from routers import main_router
+from keyboards.default_commands import set_default_commands, remove_default_commands
 
 
 SETTINGS = BotSettings()
 
-bot = Bot(token=SETTINGS.api_token)
+bot = Bot(token=SETTINGS.api_token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
 
 async def on_startup():

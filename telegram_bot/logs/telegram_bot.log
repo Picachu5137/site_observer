@@ -1,19 +1,35 @@
-2025-01-30T16:02:20.310534+0300 | INFO | main:on_startup:16 | [*] Bot starting...
-2025-01-30T16:02:20.405722+0300 | INFO | main:on_startup:22 | Name     - observer
-2025-01-30T16:02:20.406006+0300 | INFO | main:on_startup:23 | Username - @ASiteObserver_bot
-2025-01-30T16:02:20.406145+0300 | INFO | main:on_startup:24 | ID       - 7551099624
-2025-01-30T16:02:20.406287+0300 | INFO | main:on_startup:32 | Groups Mode  - Enabled
-2025-01-30T16:02:20.406426+0300 | INFO | main:on_startup:33 | Privacy Mode - Enabled
-2025-01-30T16:02:20.406658+0300 | INFO | main:on_startup:34 | Inline Mode  - Disabled
-2025-01-30T16:02:20.406793+0300 | INFO | main:on_startup:36 | bot started
-2025-01-30T16:22:02.585741+0300 | INFO | main:on_shutdown:40 | [*] Bot shutdown...
-2025-01-30T16:49:05.702773+0300 | INFO | main:on_startup:17 | Bot starting...
-2025-01-30T16:49:06.309743+0300 | INFO | main:on_startup:25 | Name     - observer
-2025-01-30T16:49:06.310087+0300 | INFO | main:on_startup:26 | Username - @ASiteObserver_bot
-2025-01-30T16:49:06.310246+0300 | INFO | main:on_startup:27 | ID       - 7551099624
-2025-01-30T16:49:06.310500+0300 | INFO | main:on_startup:35 | Groups Mode  - Enabled
-2025-01-30T16:49:06.310712+0300 | INFO | main:on_startup:36 | Privacy Mode - Enabled
-2025-01-30T16:49:06.310970+0300 | INFO | main:on_startup:37 | Inline Mode  - Disabled
-2025-01-30T16:49:06.311147+0300 | INFO | main:on_startup:39 | bot started
-2025-01-30T18:11:24.892564+0300 | INFO | main:on_shutdown:43 | Bot stopping...
-2025-01-30T18:11:25.915213+0300 | INFO | main:on_shutdown:53 | Bot stopped
+2025-02-03T16:07:06.628689+0300 | INFO | main:on_shutdown:45 | Bot stopping...
+2025-02-03T16:07:07.035506+0300 | INFO | main:on_shutdown:55 | Bot stopped
+2025-02-03T16:07:13.043986+0300 | INFO | main:on_startup:19 | Bot starting...
+2025-02-03T16:07:13.314922+0300 | INFO | main:on_startup:27 | Name     - observer
+2025-02-03T16:07:13.315222+0300 | INFO | main:on_startup:28 | Username - @ASiteObserver_bot
+2025-02-03T16:07:13.315336+0300 | INFO | main:on_startup:29 | ID       - 7551099624
+2025-02-03T16:07:13.315451+0300 | INFO | main:on_startup:37 | Groups Mode  - Enabled
+2025-02-03T16:07:13.315618+0300 | INFO | main:on_startup:38 | Privacy Mode - Enabled
+2025-02-03T16:07:13.315767+0300 | INFO | main:on_startup:39 | Inline Mode  - Disabled
+2025-02-03T16:07:13.315918+0300 | INFO | main:on_startup:41 | bot started
+2025-02-03T16:07:26.921472+0300 | DEBUG | observer_routes:add_task:27 | data={'name': '', 'url': '', 'xpath': '', 'check_method': 'HTML', 'check_period': 'DAILY'}
+2025-02-03T16:10:31.837324+0300 | INFO | main:on_shutdown:45 | Bot stopping...
+2025-02-03T16:10:32.333186+0300 | INFO | main:on_shutdown:55 | Bot stopped
+2025-02-03T16:10:44.830945+0300 | INFO | main:on_startup:19 | Bot starting...
+2025-02-03T16:10:45.126712+0300 | INFO | main:on_startup:27 | Name     - observer
+2025-02-03T16:10:45.127063+0300 | INFO | main:on_startup:28 | Username - @ASiteObserver_bot
+2025-02-03T16:10:45.127253+0300 | INFO | main:on_startup:29 | ID       - 7551099624
+2025-02-03T16:10:45.127399+0300 | INFO | main:on_startup:37 | Groups Mode  - Enabled
+2025-02-03T16:10:45.127666+0300 | INFO | main:on_startup:38 | Privacy Mode - Enabled
+2025-02-03T16:10:45.127827+0300 | INFO | main:on_startup:39 | Inline Mode  - Disabled
+2025-02-03T16:10:45.128022+0300 | INFO | main:on_startup:41 | bot started
+2025-02-03T16:10:51.727944+0300 | DEBUG | observer_routes:add_task:27 | data={'name': '', 'url': '', 'xpath': '', 'check_method': 'HTML', 'check_period': 'DAILY'}
+2025-02-03T16:14:00.982143+0300 | INFO | main:on_shutdown:45 | Bot stopping...
+2025-02-03T16:14:01.611029+0300 | INFO | main:on_shutdown:55 | Bot stopped
+2025-02-03T16:14:07.228720+0300 | INFO | main:on_startup:19 | Bot starting...
+2025-02-03T16:14:07.493777+0300 | INFO | main:on_startup:27 | Name     - observer
+2025-02-03T16:14:07.494144+0300 | INFO | main:on_startup:28 | Username - @ASiteObserver_bot
+2025-02-03T16:14:07.494317+0300 | INFO | main:on_startup:29 | ID       - 7551099624
+2025-02-03T16:14:07.494529+0300 | INFO | main:on_startup:37 | Groups Mode  - Enabled
+2025-02-03T16:14:07.494783+0300 | INFO | main:on_startup:38 | Privacy Mode - Enabled
+2025-02-03T16:14:07.495006+0300 | INFO | main:on_startup:39 | Inline Mode  - Disabled
+2025-02-03T16:14:07.495245+0300 | INFO | main:on_startup:41 | bot started
+2025-02-03T16:14:11.537213+0300 | DEBUG | observer_routes:add_task:27 | data={'name': '', 'url': '', 'xpath': '', 'check_method': 'HTML', 'check_period': 'DAILY'}
+2025-02-03T22:10:05.453066+0300 | INFO | main:on_shutdown:45 | Bot stopping...
+2025-02-03T22:10:06.011977+0300 | INFO | main:on_shutdown:55 | Bot stopped
