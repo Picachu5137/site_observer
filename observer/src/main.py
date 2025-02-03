@@ -3,7 +3,9 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from fast_grpc import FastGRPC
 
-from observer.src.schedules.observer_jobs import check_sites
+from schedules.observer_jobs import check_sites
+from grpc_service.grpc_client import telegram_bot_client
+
 
 app = FastGRPC(
         service_name="ObserverService",
@@ -22,10 +24,11 @@ async def on_startup():
     )
 
     scheduler.start()
-
     app.run()
+    telegram_bot_client.start()
 
 
 async def on_shutdown():
+    telegram_bot_client.stop()
     pass
 

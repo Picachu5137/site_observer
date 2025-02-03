@@ -39,5 +39,9 @@ class UpdateTaskRequest(BaseModel):
     def validate_xpath(cls, v: Any):
         validate_xpath(v)
 
+class SendMessageRequest(BaseModel):
+    user_id: int
+    message: str
+
 class Empty(BaseModel):
     pass
