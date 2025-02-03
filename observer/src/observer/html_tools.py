@@ -3,15 +3,15 @@ from lxml import html
 
 
 async def get_element_by_xpath_from_url(url: str, xpath: str) -> str:
-    html = await get_site_html(url=url)
-    element = get_element_by_xpath_from_html(html=html, xpath=xpath)
+    html_content = await get_site_html(url=url)
+    element = get_element_by_xpath_from_html(html_text=html_content, xpath=xpath)
 
     return element
 
 
 async def get_text_by_xpath_from_url(url: str, xpath: str) -> str:
-    html = await get_site_html(url=url)
-    text = get_text_by_xpath_from_html(html=html, xpath=xpath)
+    html_content = await get_site_html(url=url)
+    text = get_text_by_xpath_from_html(html_text=html_content, xpath=xpath)
 
     return text
 
@@ -23,14 +23,15 @@ async def get_site_html(url: str) -> str:
     return response.text
 
 
-def get_element_by_xpath_from_html(html_text: str, xpath: str) -> str:
+# TODO: доделать логику получения элемента/текста из html
+def get_element_by_xpath_from_html(html_text: str, xpath: str) -> html.XP:
     tree = html.fromstring(html=html_text)
     element = tree.xpath(xpath)
 
-    return element
+    return element[0] if element else ""
 
 
 def get_text_by_xpath_from_html(html_text: str, xpath: str) -> str:
     element = get_element_by_xpath_from_html(html_text=html_text, xpath=xpath)
     
-    return element.text_content().strip()
+    return element.text_content().strip() if element != "" else ""

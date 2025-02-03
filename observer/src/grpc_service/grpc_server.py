@@ -2,6 +2,7 @@ from main import app
 
 from schemas.grpc_schemas import AddTaskRequest, DeleteTaskRequest, UpdateTaskRequest, Empty
 from models.tasks_models import Task
+from observer.observer import PageObserver
 
 
 @app.unary_unary()
@@ -12,4 +13,6 @@ async def add_task(request: AddTaskRequest) -> Empty:
         url=request.url,
         xpath=request.xpath,
     )
+    observer = PageObserver(task)
+
     
