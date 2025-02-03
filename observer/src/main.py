@@ -1,3 +1,5 @@
+import atexit
+
 import asyncio
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.interval import IntervalTrigger
@@ -29,3 +31,10 @@ async def on_startup():
 async def on_shutdown():
     pass
 
+
+async def main():
+    await on_startup
+
+
+if __name__ == "__main__":
+    asyncio.run(main)
